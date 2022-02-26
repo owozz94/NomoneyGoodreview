@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1" metadata-complete="true">
+  <display-name>BlogProject</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+
+<session-config>
+<session-timeout>120</session-timeout> <!-- 분단위. 설정하지 않으면 was 기본 디폴트인 30분 -->
+</session-config>
+<servlet>
+<servlet-name>AdvertiserJoin</servlet-name>
+<servlet-class>controller.AdvertiserJoin</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>AdvertiserJoin</servlet-name>
+<url-pattern>/AdvertiserJoin</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>FileProc</servlet-name>
+<servlet-class>controller.FileProc</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>FileProc</servlet-name>
+<url-pattern>/FileProc</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>LoginFormProc</servlet-name>
+<servlet-class>controller.LoginFormProc</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>LoginFormProc</servlet-name>
+<url-pattern>/LoginFormProc</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>LogoutProc</servlet-name>
+<servlet-class>controller.LogoutProc</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>LogoutProc</servlet-name>
+<url-pattern>/LogoutProc</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>ReviewerJoin</servlet-name>
+<servlet-class>controller.ReviewerJoin</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>ReviewerJoin</servlet-name>
+<url-pattern>/ReviewerJoin</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>GetPost</servlet-name>
+<servlet-class>controller.GetPost</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>GetPost</servlet-name>
+<url-pattern>/GetPost</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>MainThumbnail</servlet-name>
+<servlet-class>controller.MainThumbnail</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>MainThumbnail</servlet-name>
+<url-pattern>/MainThumbnail</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>CommentSubmit</servlet-name>
+<servlet-class>controller.CommentSubmit</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>CommentSubmit</servlet-name>
+<url-pattern>/CommentSubmit</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>PostUpdate</servlet-name>
+<servlet-class>controller.PostUpdate</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>PostUpdate</servlet-name>
+<url-pattern>/PostUpdate</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+<servlet-name>Delete</servlet-name>
+<servlet-class>controller.Delete</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>Delete</servlet-name>
+<url-pattern>/Delete</url-pattern>
+</servlet-mapping>
+
+</web-app>
+
