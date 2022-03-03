@@ -12,18 +12,8 @@
 </head>
 <body>
 <div class="centerPostOut">
-<c:forEach items="${list }" var="item" varStatus="status">
-	<c:if test="%{status.first!=null}">
-		<c:out value="${status.first}"/>
-	</c:if>
-
-</c:forEach>
 
 
-
-<c:if test="${list==null}">
-게시물이 없습니다.
-</c:if>
 <c:if test="${location==null }">
 <h6>전체 게시글</h6>
 </c:if>

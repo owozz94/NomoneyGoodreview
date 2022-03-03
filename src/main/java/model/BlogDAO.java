@@ -333,5 +333,26 @@ public class BlogDAO {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	}//commentDelete end
+	}//postDelete end
+	public void UserDelete(String id, String pass, int typeNum) {
+		getCon();
+		String type="";
+		try {
+			if(typeNum==1) {
+				type="ADVERTISER";
+			}else {
+				type="REVIEWER";
+			}
+			String sql = "delete from "+type+" where id=? and password=? and type=?";
+			System.out.println(sql);
+			pstmt = con.prepareStatement(sql);
+			pstmt.setString(1, id);
+			pstmt.setString(2, pass);
+			pstmt.setInt(3, typeNum);
+			pstmt.executeQuery();
+			con.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}//UserDelete end
 }

@@ -15,6 +15,7 @@
 <div class="OutBox">
 	<div class="PostInBoxBottom">
 	<div class="BannerBottomBox">
+
 	<div class="location">
 	#${BlogBean.location }
 	</div>

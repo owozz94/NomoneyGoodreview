@@ -26,7 +26,8 @@ public class AdvertiserJoin extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		getPost(request, response);
-	}protected void getPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	}
+	protected void getPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
 		AdvertiserBean bean = new AdvertiserBean();
 		BlogDAO bdao = new BlogDAO();

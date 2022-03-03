@@ -104,5 +104,15 @@
 <url-pattern>/Delete</url-pattern>
 </servlet-mapping>
 
+
+<servlet>
+<servlet-name>DeleteUser</servlet-name>
+<servlet-class>controller.DeleteUser</servlet-class>
+</servlet>
+<servlet-mapping>
+<servlet-name>DeleteUser</servlet-name>
+<url-pattern>/DeleteUser</url-pattern>
+</servlet-mapping>
+
 </web-app>
 
